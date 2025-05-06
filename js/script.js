@@ -14,7 +14,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Sprite')
             nombre.textContent = drink.strDrink;
 
             const descripcion = document.createElement('p');
-            descripcion.textContent = drink.idDrink;
+            descripcion.textContent = '$' + drink.idDrink;
 
             const boton = document.createElement('button');
             boton.textContent = 'Seleccionar';
@@ -26,7 +26,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Sprite')
             tarjeta.appendChild(nombre);
             tarjeta.appendChild(descripcion);
             tarjeta.appendChild(boton);
-            
+
             tarjetas.appendChild(tarjeta);
         });
     })
