@@ -14,6 +14,16 @@ main{
     border-color: black;
     border: 1px solid;
     width: 500px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.perfil{
+    margin-left: 15px;
+}
+
+.content{
+    margin-left: 20px;
 }
 
 .nombre{
@@ -42,7 +52,7 @@ main{
 }
 
 .tarjeta.seleccionada {
-    background-color: #d0f0c0;
+    background-color: #b8ec9e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -66,4 +76,26 @@ main{
 p {
     text-align: center;
     color: #333;
+}
+
+.tarjeta button {
+    background-color: #9b9b9b; /* Verde agradable */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tarjeta button:hover {
+    background-color: #424242;
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
